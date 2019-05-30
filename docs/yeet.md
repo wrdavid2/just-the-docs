@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Yeet
-nav_order: 7
+nav_order: 9
 ---
 
 # Search
@@ -41,7 +41,7 @@ This command creates the `search-data.json` file that Jekyll uses to create your
 {
   {% for page in site.html_pages %}{% if page.search_exclude != true %}"{{ forloop.index0 }}": {
     "id": "{{ forloop.index0 }}",
-    "title": "{{ page.title | replace: '&amp;amp;', '&amp;' }}",
+    "title": "{{ page.title | replace: '&amp;amp;amp;', '&amp;amp;' }}",
     "content": "{{ page.content | markdownify | strip_html | escape_once | remove: 'Table of contents' | remove: '```'  | remove: '---' | replace: '\', ' ' | normalize_whitespace }}",
     "url": "{{ page.url | absolute_url }}",
     "relUrl": "{{ page.url }}"
