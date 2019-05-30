@@ -3,7 +3,7 @@ layout: default
 title: Test Grand Child
 parent: Test Child
 grand_parent: UI Components
-nav_order:
+nav_order: '1'
 ---
 
 ghghkghj
