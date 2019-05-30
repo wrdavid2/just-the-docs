@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Test Grand Child
+title: FAQ
 parent: Test Child
 grand_parent: UI Components
 nav_order: '1'
