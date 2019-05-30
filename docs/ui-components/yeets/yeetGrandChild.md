@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Test Child
-parent: UI Components
+title: Test Grand Child
+parent: Test Child
+grand_parent: UI Components
 nav_order: 99
 ---
