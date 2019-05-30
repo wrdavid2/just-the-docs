@@ -1,31 +1,33 @@
 ---
 layout: default
-title: Search
+title: Yeet
 nav_order: 7
 ---
 
 # Search
-{: .no_toc }
+{: .no_toc}
 
 ## Table of contents
-{: .no_toc .text-delta }
+{: .no_toc.text-delta}
 
-1. TOC
-{:toc}
+1. [Set up search](#set-up-search)
+   1. [Generate search index](#generate-search-index)
+   2. [Enable search in configuration](#enable-search-in-configuration)
+2. [Hiding pages from search](#hiding-pages-from-search)
 
 ---
 
 Just the Docs uses [lunr.js](http://lunrjs.com) to add a client-side search interface powered by a JSON index that Jekyll generates. All search results are shown in an auto-complete style interface (there is no search results page). By default, all generated HTML pages are indexed using the following data points:
 
-- Page title
-- Page content
-- Page URL
+* Page title
+* Page content
+* Page URL
 
 ## Set up search
 
 ### Generate search index
 
-Before you can use search, you must initialize the feature by running this `rake` command that comes with `just-the-docs`:
+Before you can use search, you must initialize the feature by running this `rake` command that comes with `just-the-docs`\:
 
 ```bash
 $ bundle exec just-the-docs rake search:init
@@ -39,7 +41,7 @@ This command creates the `search-data.json` file that Jekyll uses to create your
 {
   {% for page in site.html_pages %}{% if page.search_exclude != true %}"{{ forloop.index0 }}": {
     "id": "{{ forloop.index0 }}",
-    "title": "{{ page.title | replace: '&amp;', '&' }}",
+    "title": "{{ page.title | replace: '&amp;amp;', '&amp;' }}",
     "content": "{{ page.content | markdownify | strip_html | escape_once | remove: 'Table of contents' | remove: '```'  | remove: '---' | replace: '\', ' ' | normalize_whitespace }}",
     "url": "{{ page.url | absolute_url }}",
     "relUrl": "{{ page.url }}"
@@ -48,7 +50,7 @@ This command creates the `search-data.json` file that Jekyll uses to create your
 }{% endraw %}
 ```
 
-_Note: If you don't run this rake command or create this file manually, search will not work (or it will use the search index data from this docs site, not your site's content)._
+*Note: If you don't run this rake command or create this file manually, search will not work (or it will use the search index data from this docs site, not your site's content).*
 
 ### Enable search in configuration
 
@@ -64,7 +66,7 @@ search_enabled: true
 Sometimes you might have a page that you don't want to be indexed for the search nor to show up in search results, e.g, a 404 page. To exclude a page from search, add the `search_exclude: true` parameter to the page's YAML front matter:
 
 #### Example
-{: .no_toc }
+{: .no_toc}
 
 ```yaml
 ---
