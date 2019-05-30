@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Markdown kitchen sink
-nav_order: 99
+nav_order: 8
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Text can be **bold**, *italic*, or ~~strikethrough~~.
 
 [Link to another page](another-page).
 
@@ -12,17 +12,18 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# [](#header-1)Header 1
+# Header 1
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
-## [](#header-2)Header 2
+## Header 2
 
 > This is a blockquote following a header.
 >
+>
 > When something is important enough, you do it even if the odds are not in your favor.
 
-### [](#header-3)Header 3
+### Header 3
 
 ```js
 // Javascript code with syntax highlighting.
@@ -39,84 +40,85 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
-#### [](#header-4)Header 4
+#### Header 4
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+* This is an unordered list following a header.
+* This is an unordered list following a header.
+* This is an unordered list following a header.
 
-##### [](#header-5)Header 5
+##### Header 5
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+1. This is an ordered list following a header.
+2. This is an ordered list following a header.
+3. This is an ordered list following a header.
 
-###### [](#header-6)Header 6
+###### Header 6
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+| head1 | head two | three |
+| --- | --- | --- |
+| ok | good swedish fish | nice |
+| out of stock | good and plenty | nice |
+| ok | good `oreos` | hmm |
+| ok | good `zoute` drop | yumm |
 
 ### There's a horizontal rule below this.
 
-* * *
+---
 
 ### Here is an unordered list:
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+* Item foo
+* Item bar
+* Item baz
+* Item zip
 
 ### And an ordered list:
 
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
+1. Item one
+2. Item two
+3. Item three
+4. Item four
 
 ### And a nested list:
 
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
+* level 1 item
+  * level 2 item
+  * level 2 item
+    * level 3 item
+    * level 3 item
+* level 1 item
+  * level 2 item
+  * level 2 item
+  * level 2 item
+* level 1 item
+  * level 2 item
+  * level 2 item
+* level 1 item
 
 ### Nesting an ol in ul in an ol
 
-- level 1 item (ul)
+* level 1 item (ul)
   1. level 2 item (ol)
+  2. level 2 item (ol)
+     * level 3 item (ul)
+     * level 3 item (ul)
+* level 1 item (ul)
   1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
-  1. level 2 item (ol)
-  1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-  1. level 4 item (ol)
-  1. level 4 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
-- level 1 item (ul)
+  2. level 2 item (ol)
+     * level 3 item (ul)
+     * level 3 item (ul)
+  3. level 4 item (ol)
+  4. level 4 item (ol)
+     * level 3 item (ul)
+     * level 3 item (ul)
+* level 1 item (ul)
 
 ### And a task list
 
-- [ ] Hello, this is a TODO item
-- [ ] Hello, this is another TODO item
-- [x] Goodbye, this item is done
+* <input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Hello, this is a TODO item{: .task-list-item}
+* <input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Hello, this is another TODO item{: .task-list-item}
+* <input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Goodbye, this item is done{: .task-list-item}
+{: .task-list}
 
 ### Small image
 
@@ -126,19 +128,9 @@ end
 
 ![](https://guides.github.com/activities/hello-world/branching.png)
 
-
 ### Definition lists can be used with HTML syntax.
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+<dl><dt>Name</dt><dd>Godzilla</dd><dt>Born</dt><dd>1952</dd><dt>Birthplace</dt><dd>Japan</dd><dt>Color</dt><dd>Green</dd></dl>
 
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
