@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Configuration
+title: Or's Board
+parent: Configuration
 nav_order: 2
 ---
 
