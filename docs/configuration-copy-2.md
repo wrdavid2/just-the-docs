@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Configuration
+title: ConfigurationCopy2
 nav_order: 2
+parent: Configuration
 ---
 
 # Configuration
